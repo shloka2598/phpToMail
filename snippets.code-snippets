@@ -1,0 +1,31 @@
+{
+    "phpToMail function": {
+        "prefix": "phpMail",
+        "body": [
+            "<?php",
+            "$name = $_POST['name'];",
+            "$visitor_email = $_POST['email'];",
+            "$message = $_POST['message'];",
+        
+            "$email_from = 'sender's email';",
+        
+            "$email_subject = 'New Form Submission';",
+        
+            "$email_body = 'User Name: $name.\n '.'''User Email: $visitor_email.\n'.',''User Message: $message.\n';",
+        
+            "$to = 'reeievers Email';",
+        
+            "$headers ='From: $email_from \r\n';",
+        
+            "$headers = 'Reply-To: $visitor_email \r\n';",
+        
+            "mail($to,$email_subject,$email_body,$headers);",
+        
+            "header('Location: name of file to redirect');",
+        "?>",
+        "<!-- HTML MARKUP for phpToMail -->",
+        "<!--'<form action='backend.php' id='contact-form' method='post'>','<input name='name' type='text' class='form-control' placeholder='Your name' required>','<br>','<input name='email' type='email' class='form-control' placeholder='Your e-mail' required>','<textarea name='message' class='form-control' rows='4' required></textarea>','<input type='submit' class='form-control submit' value='SEND MESSAGE'>','</form>',-->"
+        ],
+        "description": "Creates phpToMail function with Html Markup",
+    }
+}

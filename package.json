@@ -1,0 +1,30 @@
+{
+    "name": "phptomail",
+    "displayName": "phpToMail",
+    "description": "With the help of this extension you can make php mailing function with just typing mail.",
+    "version": "1.0.0",
+    "publisher": "Shloka",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shloka2598"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
